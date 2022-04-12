@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: myFirsfont;
+}
+#inicio {
+}
+/* Converter paleta em imagem
+#5a372c
+#8b8b70
+#98c7b0
+#f0f0d8
+#c94b0c
+Código CSS
+
+.color1 { #5a372c };
+.color2 { #8b8b70 };
+.color3 { #98c7b0 };
+.color4 { #f0f0d8 };
+.color5 { #c94b0c }; */
+
+header {
+  position: relative;
+  font-family: myFirstFont;
+  font-size: 1.2em;
+  background: rgba(0, 0, 0, 0.623) url(/assetes/images/dedetizacao4.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  height: 600px;
+}
+header h2 {
+  background-image: url(/assetes/icons/mosca.png);
+  width: 50px;
+  height: 50px;
+  float: left;
+  font-size: 1em;
+}
+h2{
+
+    text-align: center;
+}
+header p {
+  color: #98c7b0;
+  text-align: center;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  padding: 20px;
+  border: solid 2px #8b8b70;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  color: #f0f0d8;
+  overflow: hidden;
+  padding: 20px;
+  background-color: #8b8b70;
+}
+a {
+  color: #f0f0d8;
+}
+
+ul {
+  float: right;
+  margin-right: 20px;
+}
+
+li {
+  margin-right: 30px;
+  list-style: none;
+  float: left;
+}
+
+li:hover {
+  box-shadow: 1px 2px 5px #44443c;
+}
+
+section {
+  font-size: 1.2em;
+  padding-top: 50px;
+  color: #8b8b70;
+  width: 80%;
+  margin: auto;
+}
+
+h3 {
+  color: #696958;
+}
+
+#about div {
+  padding: 30px;
+  box-shadow: 3px 3px 3px #dbdbc4;
+}
+
+#about img {
+  float: left;
+  padding: 10px;
+}
+#valores img {
+  width: 60%;
+  float: left;
+  padding: 10px;
+}
+
+#valores p {
+  margin-bottom: 15px;
+}
+.formatation {
+  padding: 30px;
+  box-shadow: 3px 3px 3px #dbdbc4;
+}
+#bg {
+  position: relative;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url(/assetes/images/img7.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.548);
+}
+#bg p {
+  color: #98c7b0;
+  text-align: center;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  padding: 20px;
+  box-shadow: 5px 3px 8px #98c7b0;
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  margin: 50px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 5px 5px 5px #dbdbc4;
+  float: left;
+}
+.card h3 {
+  top: 0;
+}
+#location {
+  clear: both;
+  width: 100%;
+}
+#contatos {
+  padding: 10px;
+  text-align: center;
+  color: #696958;
+  font-weight: 200;
+}
+section iframe {
+  margin: 0;
+  width: 100%;
+  height: 400px;
+}
+
+#orcamento {
+  background-image: url(/assetes/images/formImg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+#orcamento h2 {
+  font-size: 1.5em;
+  color: #ffffff;
+  text-shadow: 5px 5px 5px #696958;
+}
+#FormContainer {
+  padding: 15px;
+  margin: auto;
+  background-color: #6969586e;
+  width: 40%;
+  height: 500px;
+}
+
+input,
+textarea {
+  border: none;
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+textarea {
+  height: 100px;
+}
+#submit {
+  background-color: #696958;
+  color: #dbdbc4;
+  font-size: 1.2em;
+}
+#popUp {
+  position: fixed;
+  background: url(/assetes/icons/whatsapp.png);
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  right: 0;
+  bottom: 50%;
+}
+footer {
+  font-size: 1.2em;
+  padding: 15px;
+  text-align: center;
+  background-color: #696958;
+  color: white;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(/assetes/RobotoCondensed-Bold.ttf);
+}
+
+@media only screen and (max-width: 750px) {
+  #FormContainer {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+  nav {
+    padding: 0;
+    height: 100px;
+    box-sizing: border-box;
+  }
+
+  ul li {
+    margin-right: 0;
+    margin-top: 15px;
+    /* float: none; */
+  }
+  li {
+    box-shadow: 8px 5px 10px #696958;
+    padding: 10px;
+  }
+
+  section {
+    width: 100%;
+  }
+  #valores img {
+    width: 100%;
+  }
+  .card {
+    height: 200px;
+    margin: auto;
+    float: none;
+    margin-top: 50px;
+  }
+  #FormContainer {
+    width: 90%;
+  }
+}
